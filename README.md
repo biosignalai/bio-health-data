@@ -10,6 +10,18 @@ Open-source demo that ingests Apple Health (Health Auto Export) data, organizes 
 - **Exported charts** (HRV, Resting HR, Steps) you can view right here.
 - **Docs** explaining the pipeline and the AI roadmap.
 
+- ## Try the Notebook (no secrets required)
+
+We include a small, **public-safe** demo in [`demo/health_demo.ipynb`](demo/health_demo.ipynb) that runs out of the box using a synthetic Apple-Health-like export [`demo/example_health_export.json`](demo/example_health_export.json).
+
+**How to run it:**
+1. Open the notebook in GitHub → “Open in Colab/nbviewer” or download and run locally in Jupyter.
+2. It will load the bundled synthetic JSON and plot:
+   - HRV (SDNN) in ms
+   - Resting Heart Rate (bpm)
+   - Daily Steps (count)
+3. To use your own Health Auto Export JSON, change `INPUT_JSON` in the first cell to your file path (do **not** commit private data).
+
 > Production infra (compose files, secrets, HA/Frigate, etc.) lives in a **private** repo. This public repo is safe to share—no secrets.
 
 ---
@@ -62,6 +74,14 @@ Combining these with sleep and activity intensity enables **AI-assisted guidance
 Full details: [`docs/upwork_project.md`](docs/upwork_project.md)
 
 ---
+## Repository layout
+bio-health-data/
+├─ assets/                     # screenshots used in the README
+├─ demo/
+│  ├─ health_demo.ipynb        # public-safe notebook (synthetic example)
+│  └─ example_health_export.json
+└─ docs/                     
+
 
 ## Run it yourself (summary)
 - Export JSON from Health Auto Export.
@@ -69,9 +89,11 @@ Full details: [`docs/upwork_project.md`](docs/upwork_project.md)
 - Connect Grafana → InfluxDB (URL, org, bucket, token).
 - Import example panels and start iterating.
 
-> We keep deploy specifics in a separate private repo to avoid exposing secrets.
 
 ---
+## Privacy & what’s private
 
+This public repo only contains **safe demo materials** (no secrets, no personal exports).
+Our production infrastructure (Docker, InfluxDB, Grafana, Home Assistant, Mosquitto configs, tokens/secrets) lives in a **private** repository.
 ## License
 MIT
