@@ -24,7 +24,10 @@ Open-source demo that ingests Apple Health (Health Auto Export) data, organizes 
   <img src="assets/Daily_Steps.png" width="45%" />
   <img src="assets/HRV_7_Dsy_Mean.png" width="45%" />
 </p>
-
+<p align="center">
+  <img src="assets/dashboard.png" width="90%" />
+  
+</p>
 ---
 
 ## Pipeline (high level)
