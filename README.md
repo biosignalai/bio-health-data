@@ -17,15 +17,12 @@ Open-source demo that ingests Apple Health (Health Auto Export) data, organizes 
 ## Quick look (sample outputs)
 
 <p align="center">
-  <img src="assets/HRV_SDNN.png" width="45%" />
-  <img src="assets/Resting_Heart_Rate.png" width="45%" />
+  <img src="assets/HRV_SDNN2.png" width="45%" />
+  <img src="assets/Resting_Heart_Rate2.png" width="45%" />
 </p>
 <p align="center">
-  <img src="assets/Daily_Steps.png" width="45%" />
-  <img src="assets/HRV_7_Dsy_Mean.png" width="45%" />
-</p>
-<p align="center">
-  <img src="assets/dashboard.png" width="90%" />
+  <img src="assets/Daily_Steps2.png" width="45%" />
+  <img src="assets/HRV_7_Dsy_Mean2.png" width="45%" />
   
 </p>
 ---
