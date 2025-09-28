@@ -1,0 +1,5 @@
+[
+ {"_time": "2025-09-20T08:00:00Z", "_metric": "hrv_sdnn", "value": 42, "unit": "ms"},
+ {"_time": "2025-09-21T08:00:00Z", "_metric": "resting_heart_rate", "value": 68, "unit": "bpm"},
+ {"_time": "2025-09-22T08:00:00Z", "_metric": "steps", "value": 8500, "unit": "count"}
+]
